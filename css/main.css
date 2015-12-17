@@ -1,45 +1,136 @@
 
+/*====================================================================*/
+/*--------------------------------------------------------------------- 
+Project: nomad portfolio site
+Author: Jerome Matthews
+Date: December 16, 2015
+Version: 0.1
+Requirements/Dependencies: Javascript,JQuery, JQuerySmint
+-----------------------------------------------------------------------
+/*====================================================================*/
+
+/*===========================================================*/
+/*Browser container*/
+/*===========================================================*/
 #container {
 	width: 100%;
-	max-width: 1600px;
-	min-width: 960px;
 	z-index: 10;
 	position: relative;
 	margin: 0 auto;
 	padding: 0;
 }
 
+/*===========================================================*/
+/*Site Navigation:*/
+/*===========================================================*/
+#callout {
+	/*Text on top of the hero image above the fold*/
+	position:absolute;
+	float: inherit;
+	clear: both;
+	z-index: 2000;
+	padding-left: 100px;
+	top: 270px;
+	font-family: sans-serif;
+	font-size: 1.3em;
+	color:azure;
+}
+
+#mainMenu{
+	position: relative;
+	top: 0px;
+	
+}
+
+   .menu {
+	position: absolute; 
+	height: 40px;
+	width: 100%;
+	z-index: 1000;
+	border: 1px solid gray;  
+}
+
+.menu a{
+	padding: 10px 0px 0px 0px; 
+	/*Remember padding order: 
+	All four points - most control:	top-px, right-px, bottom-px, left-px
+	Top and bottom points & Left and Right points shorthand: top-bottom-px, right-left-px
+	*/
+}
+
 .navBtn {
 	display: block;
-	height: 35px;
+	height: 30px;
 	width: 10%;
 	float: left;
 	margin: 0px 0px 0 0;
 	text-decoration: none;
-	font-size: 14px;
-	padding: 15px 2% 0 2%;
+	font-size: 20px;
 	text-align: center;
+	border-right: rgba(000,000,000,0.5) solid 1px;
 }
 
-.menu {
-	height: 40px;
-	z-index: 1000;
-	width: 100%;
-	padding: 10px;
+
+
+
+
+
+
+
+.colorchange {	
+	background-color: darkgrey;
 }
 
+
+.active {
+	color: red;
+}
+/*===========================================================*/
+/*Internal Page/ Section Base Styling:*/
+/*===========================================================*/
 .section-style {
 	margin: 0;
-	height: 450px;
+	height: 1000px;
 	padding-top: 50px;
 	padding-left:190px;
 	padding-right: 190px;
 	align-content: center;
+	background: rgba(245,245,245,1);
 }
+
+.section-style #copy{
+	line-height: 1.5;
+	font-kerning: normal;
+	text-align: center;
+}
+
+.section-style #copy h3{
+	font-size: 20px;
+}
+
 .section-style h1{
 	font-size: 72px;
 }
 
-.billboard-style {
-	height: 566px;
+/*===========================================================*/
+
+
+
+
+
+
+#brand {
+	position: absolute;
+	z-index: 2000;
+	top: 350px;
+	left: 550px;
+}
+
+body {
+	font-family: sans-serif;
+}
+
+#footer {
+	color: rgba(255,255,255,0.7);
+	background: rgba(000,000,000,0.7);
 }
