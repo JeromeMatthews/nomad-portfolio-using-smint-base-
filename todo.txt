@@ -1,0 +1,5 @@
+- Add the images to showcased previous web projects in slideshow
+- Add the necessary code files to implement image slider for web section:  bxslider.css, bxslider.js etc.
+- Check for responsive adaptations and cohesive appearance across all popular browsers.
+- Be sure to credit the author of the code for bxslider in the portfolio readme file.
+

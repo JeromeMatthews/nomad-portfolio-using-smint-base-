@@ -1,21 +1,26 @@
+<!doctype html>
 <html>
 <head>
-	<link type="text/css" rel="stylesheet" href="css/html5doctor-reset-stylesheet.min.css">
+<link type="text/css" rel="stylesheet" href="css/html5doctor-reset-stylesheet.min.css"/>
 <link type="text/css" rel="stylesheet" href="css/main.css"/>
+<link type="text/css" rel="stylesheet" href="css/jquery.bxslider.css"/>
+<link type="text/css" rel="stylesheet" href="css/bxSlider.css"/>	
+<!--CSS FILES =========================================================================-->	
+<!-- ------------------------------------------------------------------------------------ -->
+<!-- JAVASCRIPT FILES =================================================================-->	
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/jquery.smint.js"></script>
 <script type="text/javascript" src="js/localSmint.js"></script>
 <script type="text/javascript" src="js/siteJquery.js"></script>
+<script type="text/javascript" src="js/jquery.bxslider.min.js"></script>	
+<script type="text/javascript" src="js/bxSlider-local.js"></script>	
 </head>
 <body>
 	<div id="container"><!-- site container -->
 		<div class="h"> <!-- Hero section -->
-			<div id="billboard">
-				
 			<img src="images/picjumbo.com_HNCK4400.jpg" height="600" width="100%"/>
-				<span id="callout">working in the digital space at a cross-roads between web, 
-					graphic, and media design for personal and commercial projects.</span><!--Site callout text-->
-			</div>
+				<p class="callout">working in the digital space at a cross-roads between web, 
+					graphic, and media design for personal and commercial projects.</p><!--Site callout text-->
 			<img id="brand" src="images/NOMAD-DESIGN-Draft-4-black.png" height="100"><!-- company branding: nomad logo -->
 		</div> <!-- End of Hero Section -->
 		
@@ -33,13 +38,30 @@
 			
 		</nav>
 	</div><!-- End of Main Navigation -->
-		
-		<div  class="section-style w"> <!-- Web Project Highlights -->
-		<section>
-			<h1>WEB</h1>
-		In integer! In dignissim, parturient nunc, aenean ac nascetur arcu nunc placerat ac mid integer sed platea adipiscing duis rhoncus. Scelerisque, amet, dignissim ac! Sagittis vel cras mid! Nec montes! Montes ultricies sit parturient velit, est integer pid tempor eros platea sed, adipiscing purus etiam.
-		</section>
+			
+		<div id="web" class=" w"> <!-- Web Project Highlights -->
+			
+			
+			<div><!-- boxSlider slideshow plugin -->
+				<ul class="boxSlider">
+					<li>
+						<img src="images/BEAM-Jamaica.JPG" title=
+							 "<h1>PROJECT: B.E.A.M. Jamaica</h1>
+							  <br> company portal site for Browne Entertainment
+							  Arts and Media. A performance company located in Kingston Jamaica."/>
+					</li>
+					<li>
+						<img src="images/ECO-JA.JPG" title=
+							 "<h1>PROJECT: ECO-JA</h1>
+							  <br> A personal sample project for a fictional environmental agency."/>
+					</li>
+				</ul>
+			</div><!--End of boxSlider slideshow plugin -->
 		</div> <!--End of Web Project Highlights -->
+		
+		
+		
+		
 		
 		<div class="section-style p">  <!--Print Project Highlights -->
 		<section>
@@ -55,39 +77,40 @@
 		</section>
 		</div><!--End of Video Project Highlights -->
 		
-		<div class="section-style o"> <!-- Our Story - Company Why -->
+		
+		
+		<div class="ourstory-bg o "><!-- Our Story - Company Why -->
+		
 		<section id="copy">
 			
 			<h1>OUR STORY</h1>
 
-			<h3>We believe that there’s a story to be told in everything done.</h3> <br> 
+			We believe that there’s a story to be told in everything done. <br> 
 			<br>
 			
 			<p>That in each story there always exists a narrative that <br>
 			encapsulates what happens to bring too reality everything around us.<br></p>
-			Nomad believes in telling those stories, in seeking and developing those narratives. <br>
+			Nomad believes in telling those stories, in seeking and developing those narratives. 
+			<br> This experience of moving things from concept to fruition and having a<br> 
+			passion for seeing there development expands beyond the realm of business. <br>
 			<br>
-			
-			This experience of moving things from concept to fruition 
-			and having a passion for seeing there development expands 
-			beyond the realm of business. 
-			It is a predominant thought process adhered too,
-			a way of life that we subscribe
- 			For us, it’s all about the journey, the in-betweens
-			of getting from A to B and the magic that takes place on the way. 	
+			It is a predominant thought process adhered too, a way of life <br>
+			that we subscribe For us, it’s all about the journey, the in-betweens<br>
+			of getting from A to B and the magic that takes place on the way. <br>	
 			We’re all about improvement and growth here, <br>
 			having a <strong>kaizen*</strong> thought process to our work and lives..<br>
 			<br>
-			<strong>*Kaizen </strong>is the practice of continuous improvement.<br>
+			<cite><strong>*Kaizen </strong>is the practice of continuous improvement.<br>
 			Kaizen was originally introduced to the West by Masaaki Imai 
-			in his book Kaizen: The Key to Japan's Competitive Success in 1986.
+			in his book <a href="http://www.amazon.com/Kaizen-The-Japans-Competitive-Success/dp/007554332X">Kaizen: The Key to Japan's Competitive Success in 1986.</a></cite>
 
 			<br>
-			<!--<img src="images/NOMAD-DESIGN-Draft-4-black.png" height="50"><!-- company branding: nomad logo -->
+			<img src="images/NOMAD-DESIGN-Draft-4-black.png" height="50"><!-- company branding: nomad logo -->
 			<br>
-		</section>
-		</div> <!-- End of Our Story - Company Why -->
+		</section> <!-- Copy Section-->
+				
 		
+		</div>	<!-- End of Our Story - Company Why -->
 		
 		<div id="footer" class="section-style c"> <!--Contact -->
 		<section>
